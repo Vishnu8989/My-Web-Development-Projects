@@ -1,0 +1,189 @@
+* {
+    font-family: 'lato', serif;
+}
+
+#title {
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(45deg, #ff5f68, #d9ff71, #ff5f68);
+    /* border-radius: 0px 0px 0px 0px; */
+    font-family: cursive;
+    font-size: large;
+    font-size: 30px;
+    font-style: italic;
+    font-weight: 1000;
+    top: 0px;
+    left: 0px;
+}
+
+.thumbnail {
+    height: 30px;
+    padding: 0px;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-image: url(https://i.ibb.co/34HqVdd/beach-clean-skyline-sunset-4k.jpg);
+    margin: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#navbar {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    background-color: hsl(145, 100%, 70%);
+    border-radius: 0px 0px 10px 10px;
+    /* border-color: red; */
+    margin-top: 0px;
+    width: 100%;
+    font-family: 'New Tegomin', serif;
+}
+
+@media screen and (max-width: 700px) {
+    #navbar {
+        flex-direction: column;
+    }
+}
+
+#navbar_content {
+    padding: 20px;
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+    transition: .5s all;
+    font-size: 20px;
+}
+
+#navbar_content :visited {
+    color: blue;
+}
+
+#navbar_content:hover {
+    border-radius: 20px;
+    /* transform: scale(1, 1.1); */
+    background-color: hsl(145, 100%, 40%);
+    text-decoration: underline;
+    animation: change_color 10s infinite forwards;
+}
+
+@keyframes change_color {
+    0%,
+    100% {
+        color: crimson;
+    }
+    50% {
+        color: teal;
+    }
+}
+
+#tag_line {
+    text-align: center;
+    margin: 10px auto 10px auto;
+    animation-name: blink;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    text-shadow: 20px;
+    font-size: 30px;
+    padding: 10px 0px 10px 0px;
+    /* border: 2px solid black; */
+}
+
+#tag_line:hover {
+    animation: none;
+}
+
+@keyframes blink {
+    0%,
+    100% {
+        opacity: 0.1;
+        transform: scale(.1);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+#main_page_td {
+    padding: 45px 20px 45px 20px;
+    transform: scale(.8);
+    width: 30%;
+    background-color: hsl(100, 30%, 80%);
+    text-align: center;
+    border-radius: 20px;
+    transition: .5s all;
+}
+
+#main_page_td:hover {
+    transform: scale(1);
+    animation: change_color 10s infinite forwards;
+    background-color: hsl(102, 83%, 82%);
+    transition-delay: 0s;
+}
+
+#center_table {
+    margin: 30px auto 0px auto;
+}
+
+#table_links {
+    color: rebeccapurple;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 1000;
+}
+
+#table_links:hover {
+    animation: change_color 10s infinite forwards;
+}
+
+#foot {
+    display: flex;
+    flex-direction: row-reverse;
+    /* background: linear-gradient(45deg, cyan, orange); */
+    background-color: transparent;
+    border-radius: 0px 0px 10px 10px;
+    /* border-color: red; */
+    margin-top: 0px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.articles {
+    color: hsl(145, 100%, 80%);
+    max-width: 80%;
+    margin: 100px auto 10px auto;
+    text-align: left;
+    background: linear-gradient(45deg, teal, transparent, teal);
+    padding: 30px;
+    border-radius: 20px;
+    font-family: 'New Tegomin', serif;
+    font-size: 20px;
+    line-height: 25px;
+    border: 3px solid black;
+    transition: 5s background 0s;
+}
+
+.articles:hover {
+    background-color: teal;
+}
+
+#head {
+    font-size: 30px;
+    margin: 10px auto 30px auto;
+    text-align: center;
+}
+
+#foot_content {
+    padding: 20px;
+    color: lightsalmon;
+    font-weight: 600;
+}
+
+#foot_content:hover {
+    color: blue;
+}

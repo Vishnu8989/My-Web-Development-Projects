@@ -1,0 +1,123 @@
+    .top {
+        padding: 10px;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        background: linear-gradient(45deg, aquamarine, rgb(253, 193, 81), aquamarine);
+        width: 100%;
+        z-index: 1;
+    }
+    
+    .top:hover {
+        background: linear-gradient(45deg, rgb(253, 193, 81), aquamarine, rgb(253, 193, 81));
+    }
+    
+    #trompbone {
+        width: 500px;
+        height: fit-content;
+        margin: 20px 0px;
+    }
+    
+    .elements {
+        width: 100%;
+        padding: 150px 0px 0px 0px;
+        text-align: center;
+    }
+    
+    * {
+        font-family: sans-serif;
+    }
+    
+    .email {
+        width: 250px;
+        height: 30px;
+        margin: 10px;
+    }
+    
+    .links {
+        display: flex;
+        flex-direction: row;
+        float: right;
+        padding-top: 40px;
+        flex-wrap: wrap;
+    }
+    
+    .link {
+        color: black;
+        margin: 10px;
+        padding: 20px;
+        text-decoration: none;
+        font-weight: 500;
+        font-family: cursive;
+    }
+    
+    .started {
+        background-color: hsl(49, 66%, 60%);
+        padding: 10px;
+        display: inline-block;
+        font-weight: bolder;
+        text-decoration: none;
+        color: black;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    
+    .group {
+        display: flex;
+        -ms-flex-align: end;
+        flex-direction: row;
+        text-align: center;
+        margin-left: 200px;
+    }
+    
+    .icon {
+        opacity: .8;
+        height: 75px;
+        width: 75px;
+        text-align: center;
+        display: inline-block;
+        z-index: 1;
+    }
+    
+    td {
+        padding: 50px 20px 0px 40px;
+        max-width: 700px;
+    }
+    
+    .main_table {
+        margin: 20px 20px 20px 200px;
+    }
+    
+    body {
+        background-color: antiquewhite
+    }
+    
+    #how-it-works {
+        text-align: center;
+        display: inline-block;
+        padding: 30px;
+    }
+    
+    #video {
+        width: 500px;
+        height: 300px;
+    }
+    
+    .last_table {
+        text-align: center;
+        width: 1000px;
+        /* background-color: red; */
+        margin: 100px;
+    }
+    
+    #head {
+        background-color: burlywood;
+        padding: 20px;
+        margin: 20px;
+        border: 30px solid antiquewhite;
+    }
+    
+    #price {
+        /* background-color: green; */
+        padding: 20px;
+        margin: 10px;
+    }

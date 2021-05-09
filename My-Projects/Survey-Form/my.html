@@ -1,0 +1,167 @@
+<html>
+
+<head>
+    <!-- <link rel="stylesheet" type="text/css" href="my.css" /> -->
+    <style>
+        * {
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: 700;
+            word-spacing: 3px;
+            letter-spacing: 2px;
+        }
+        
+        body {
+            background: linear-gradient(45deg, hsl(330, 90%, 90%), hsl(150, 90%, 90%));
+        }
+        
+        .main_block {
+            width: 100%;
+            margin: 3.125rem auto 0 auto;
+            text-align: center;
+        }
+        
+        .header {
+            text-align: center;
+            line-height: 20px;
+            background: linear-gradient(45deg, cyan, red);
+            padding: 10px;
+            opacity: .8;
+        }
+        
+        .coloumn {
+            margin: 20px;
+            text-align: left;
+            margin: 20px;
+        }
+        
+        .wide {
+            width: 100%;
+            padding: 10px;
+            margin: 5px;
+        }
+        
+        form {
+            background-color: hsl(180, 90%, 90%);
+            opacity: 1;
+            padding: 20px;
+            text-align: center;
+            width: 900px;
+            display: inline-block;
+        }
+        
+        #options {
+            display: flex;
+            margin: 20px 0px 0px 40px;
+        }
+        
+        textarea {
+            width: 100%;
+            height: 200px;
+        }
+        
+        .buttons {
+            display: flex;
+            flex-direction: row;
+            font-weight: bold;
+            letter-spacing: 3px;
+        }
+        
+        #submit {
+            background-color: green;
+        }
+        
+        #reset {
+            background-color: red;
+        }
+        
+        button {
+            width: 100%;
+            height: 50px;
+            opacity: .8;
+            font-size: large;
+            letter-spacing: 5px;
+        }
+        
+        button:hover {
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main_block">
+        <header class="header">
+            <h1>Free Code Camp Survey form</h1>
+            <p>Thank You for taking time to Help Us improve the Platform</p>
+        </header>
+        <form>
+            <div class="coloumn">
+                <label for="name">Name </label>
+                <input type="text" name="name" id="name" class="wide" placeholder=" Enter your Name here " required>
+            </div>
+            <div class="coloumn ">
+                <label for="email ">Email </label>
+                <input type="email " name="email " class="wide " id="email " placeholder="Enter you email here " required>
+            </div>
+            <div class="coloumn ">
+                <label for="age ">Age </label><span> (optional)</span>
+                <input type="number " class="wide" name=" age " id="age " min="10 " max="99 " placeholder="Age ">
+            </div>
+            <div class="coloumn ">
+                <label for="role ">Which Option best describe Your current role</label>
+                <select class="wide" name="role " required>
+                    <option disabled selected value>Select Current Role</option>
+                    <option value="Student ">Student</option>
+                    <option value="Job ">Job</option>
+                    <option value="Learner ">Learner</option>
+                    <option value="Intern ">Intern</option>
+                    <option value="Other ">Other</option>
+                </select>
+            </div>
+            <div class="coloumn" class="wide">
+                <p>Would You prefer Freecode camp to a friend?</p>
+                <label>
+                    <input name="prefer" value="Sure" type="radio">Sure
+                </label>
+                <label>
+                    <input name="prefer " value="Not Sure" type="radio">Not Sure
+                </label>
+                <label>
+                    <input name="prefer" value="Maybe Later" type="radio">Maybe Later
+                </label>
+                <label>
+                    <input name="prefer" value="No" type="radio">No
+                </label>
+            </div>
+            <div class="coloumn">
+                <label for="MostLike">What was your Most liked Feature of freeCodeCamp</label>
+                <select name="MostLike" required class="wide">
+                    <option disabled selected value>Select Most Liked Feature</option>
+                    <option value="Challenges">Challenges</option>
+                    <option value="Projects">Projects</option>
+                    <option value="OpenSource">Open Source</option>
+                    <option value="Way_of_teaching">Way of teaching</option>
+                </select>
+            </div>
+            <div class="coloum">
+                <p class="coloumn">What would You Like to see improved?<span> (Check All that apply)</span></p>
+                <label id="options"><input name="Improvement" value="Front_end" , type="checkbox">Front-end Projects</label>
+                <label id="options"><input name="Improvement" value="Back_end" , type="checkbox">Back-end Projects</label>
+                <label id="options"><input name="Improvement" value="Data_Visualisation" , type="checkbox">Data Visualization</label>
+                <label id="options"><input name="Improvement" value="Videos" , type="checkbox">Videos</label>
+                <label id="options"><input name="Improvement" value="Fourm" , type="checkbox">Fourm</label>
+                <label id="options"><input name="Improvement" value="Material_Coverage" , type="checkbox">Material Coverage</label>
+            </div>
+            <div class="coloumn ">
+                <p>Any Comment or suggestions?</p>
+                <textarea id="comments " name="comment " placeholder="Enter Your Comment here... "></textarea>
+            </div>
+            <div class="buttons">
+                <button type="submit" id="submit">Submit</button>
+                <button type="reset" id="reset">Reset</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

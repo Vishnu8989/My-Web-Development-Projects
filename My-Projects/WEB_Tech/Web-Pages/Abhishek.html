@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../CSS/Abhishek.css" />
+
+    <title>HTML TAGS</title>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="info">
+            <h2>Name &nbsp:&nbsp Abhishek Aryan</h2>
+            <h2>Roll no &nbsp:&nbsp&nbsp 1906004</h2>
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#listintro"> Introduction     </a></li>
+                <li><a href="#ordered">   Ordered List     </a></li>
+                <li><a href="#unordered"> Unordered List   </a></li>
+                <li><a href="#description">Description List</a></li>
+            </ul>
+        </nav>
+
+        <div class="listintro" id="listintro">
+
+            <h1> Introduction</h1>
+            <p> Lists are used to group together related pieces of information so they are clearly associated with each other and are easy to read. In modern web development, lists are workhorse elements, frequently used for navigation as well as general
+                content.
+                <br>
+
+                <br>Lists are good from a structural point of view as they help create a well-structured, more accessible, easy-to-maintain document. They are also useful because they provide specialized elements to which you can attach CSS styles.</div>
+
+
+        <div class="ordered" id="ordered">
+            <h1> Ordered List</h1>
+
+            <p> An ordered list starts with the
+                < ol> tag. Each list item starts with the li tag.The default value for the list items is marked as 1,2,3... and so on but we can modify them to some other type if we want.This leads us to the type attribute.The type attribute of the ol tag,
+                    defines the type of the list item marker
+
+                    <br><br> &emsp;&emsp;&ensp; <b> Type</b> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                    <b>Description</b>
+
+                    <br><br> &nbsp;
+                    < ol type="1"> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; The list items will be numbered with numbers (default)
+
+                        <br><br>&nbsp;
+                        < ol type="A"> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; The list items will be numbered with uppercase letters
+
+                            <br><br>&nbsp;
+                            < ol type="a"> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; The list items will be numbered with lowercase letters
+
+                                <br><br>&nbsp;
+                                < ol type="I"> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; The list items will be numbered with uppercase roman numbers
+
+                                    <br><br>&nbsp;
+                                    < ol type="i"> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; The list items will be numbered with lowercase roman numbers
+
+                                        <br><br>&nbsp;
+                                        < ol type="1" &nbsp; start=11> &emsp;&emsp; The list items will be numbered with numbers starting from 11
+                                            <br><br>&nbsp;
+                                            < ol type="A" &nbsp; start=10> &emsp;&ensp; The list items will be numbered with uppercase letters starting from J
+
+                                                <br><br> &emsp; &emsp; &emsp;<b>An example of ordered List: </b>
+
+                                                <br><br>
+                                                < ol>
+                                                    <br>&emsp;&emsp;
+                                                    < li>&nbsp; OS
+                                                        < /li>
+                                                            <br>&emsp;&emsp;
+                                                            < li> &nbsp;COA
+                                                                < /li>
+                                                                    <br>&emsp;&emsp;
+                                                                    < li> &nbsp;WT
+                                                                        < /li>
+                                                                            <br>
+                                                                            < /ol>
+                                                                                <br><br> It will be displayed on the web page as given below
+
+                                                                                <br>
+                                                                                <ol>
+                                                                                    <li> OS </li>
+                                                                                    <li> COA </li>
+                                                                                    <li> WT </li>
+            </p>
+        </div>
+        <div class="unordered_html" id="unordered">
+            <h1> Unordered List</h1>
+
+            <p>
+                An unordered list starts with the
+                < ul> tag. Each list item starts with the
+                    < li> tag. Here, no numbering is there.The list items will be marked with discs by default The type attribute of the ol tag, defines the type of the list item marker
+
+                        <br><br> &emsp;&emsp;&emsp; <b> Value</b> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; <b>Description</b>
+
+                        <br><br> &nbsp;&emsp;
+                        < ul type="disc"> &emsp;&emsp;&emsp;&nbsp; Sets the list item marker to a bullet (default)
+                            <br><br> &emsp;
+                            < ul type="circle"> &emsp;&emsp;&emsp; Sets the list item marker to a circle
+                                <br><br> &nbsp;
+                                < ul type="square"> &emsp;&emsp;&emsp; Sets the list item marker to a square
+                                    <br><br> &nbsp;&emsp;
+                                    < ul type="none"> &emsp;&emsp;&emsp; The list items will not be marked
+
+                                        <br><br> &emsp; &emsp; &emsp;<b>An example of unordered list : </b>
+
+                                        <br><br>
+                                        < ul>
+                                            <br> &emsp;&emsp;
+                                            < li> &nbsp; pencil
+                                                < /li>
+                                                    <br> &emsp;&emsp;
+                                                    < li> &nbsp; pen
+                                                        < /li>
+                                                            <br> &emsp;&emsp;
+                                                            < li> &nbsp; notes
+                                                                < /li>
+                                                                    <br>
+                                                                    < /ul>
+                                                                        <br><br> It will be displayed on the web page as given below
+
+                                                                        <br>
+                                                                        <ul>
+                                                                            <li> pencil </li>
+                                                                            <li> pen </li>
+                                                                            <li> notes </li>
+                                                                        </ul>
+
+                                                                        <br> Now suppose we write the html code as:
+                                                                        <br>
+                                                                        < ul type="square">
+                                                                            <br>
+                                                                            < li type="circle"> Tea
+                                                                                < /li>
+                                                                                    <br>
+                                                                                    < li type="circle"> Coffee </ li>
+                                                                                    <br>
+                                                                                    < /ul>
+
+                                                                                        <br><br> Here, square will be overwridden by circle and the web page will look like:
+                                                                                        <br>
+                                                                                        <ul type="square">
+                                                                                            <li type="circle"> Tea </li>
+                                                                                            <li type="circle"> Coffee </li>
+                                                                                        </ul>
+            </p>
+        </div>
+        <div class="description" id="description">
+            <h1>Description List</h1>
+
+            <p>
+
+                A description list is a list of items with a description or definition of each item. The description list is created using
+                < dl> tag. The
+                    < dl> tag is used in conjunction with the
+                        < dt> tag which specify a term, and the
+                            < dd> tag which specify the term's definition.
+
+                                <br><br>The
+                                < dl> tag defines the description list, the
+                                    < dt> tag defines the term (name), and the
+                                        < dd> tag describes each term
+
+                                            <br><br>
+                                            <b>Example:</b>
+                                            <br><br>
+                                            < dl>
+                                                <br> &emsp;&emsp;
+                                                < dt>Coffee
+                                                    < /dt>
+                                                        <br> &emsp;&emsp;&emsp;&emsp;
+                                                        < dd>- black hot drink
+                                                            < /dd>
+                                                                <br> &emsp;&emsp;
+                                                                < dt>Milk
+                                                                    < /dt>
+                                                                        <br> &emsp;&emsp;&emsp;&emsp;
+                                                                        < dd>- white cold drink
+                                                                            < /dd>
+                                                                                <br>
+                                                                                < /dl>
+
+                                                                                    <br><br><b>It will be displayed on the web page as given below:</b> &emsp;&emsp; <dt>Coffee</dt> &emsp;&emsp;&emsp;&emsp;
+                                                                                    <dd>- black hot drink</dd>
+                                                                                    &emsp;&emsp; <dt>Milk </dt> &emsp;&emsp;&emsp;&emsp;
+                                                                                    <dd>- white cold drink</dd>
+                                                                                    </dl>
+            </p>
+
+        </div>
+
+
+        <footer>
+            <div class="footer">
+                <h1>THANK YOU</h1>
+
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
